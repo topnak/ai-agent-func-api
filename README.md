@@ -5,7 +5,10 @@ This repository contains a Python Azure Function named `RunAgent`.
 Below are step-by-step instructions to run the function locally on Windows (PowerShell) and how to deploy it to Azure.
 
 ## Prerequisites
-- Python 3.8+ installed and on PATH
+- Python 3.8 through 3.11 installed and on PATH (recommended)
+
+### Python compatibility
+This project is tested with Python 3.8, 3.9, 3.10 and 3.11. It is NOT compatible with Python 3.12 or newer due to runtime/worker incompatibilities with the Azure Functions Python worker at the time of writing. Please use a supported Python version when creating the virtual environment for local runs and when configuring the Function App runtime in Azure.
 - Azure Functions Core Tools (v4) installed: https://learn.microsoft.com/azure/azure-functions/functions-run-local
 - Azure CLI installed and logged in (az login): https://learn.microsoft.com/cli/azure/install-azure-cli
 - (Optional) Visual Studio Code with the Azure Functions extension
