@@ -108,8 +108,4 @@ az functionapp config appsettings set --name MyUniqueFunctionAppName --resource-
 - For local storage emulation, consider installing Azurite or use `UseDevelopmentStorage=true` for the AzureWebJobsStorage setting.
 - Ensure `requirements.txt` matches the runtime Python version used by the Function App in Azure.
 
-## Next steps (optional)
-- Add a CI/CD pipeline (GitHub Actions or Azure DevOps) for continuous deployment.
-- Add unit tests and a simple test harness.
 
-If you'd like, I can also add sample `local.settings.json` templating, or create a GitHub Actions workflow to deploy on push.
