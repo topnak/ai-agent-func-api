@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "EXAMPLE_SETTING": "replace-with-value",
+    "OPENAI_API_KEY": "replace-with-your-openai-key-if-used"
+  }
+}
