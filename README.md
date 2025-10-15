@@ -10,6 +10,13 @@ Below are step-by-step instructions to run the function locally on Windows (Powe
 ### Python compatibility
 This project is tested with Python 3.8, 3.9, 3.10 and 3.11. It is NOT compatible with Python 3.12 or newer due to runtime/worker incompatibilities with the Azure Functions Python worker at the time of writing. Please use a supported Python version when creating the virtual environment for local runs and when configuring the Function App runtime in Azure.
 - Azure Functions Core Tools (v4) installed: https://learn.microsoft.com/azure/azure-functions/functions-run-local
+
+```powershell
+npm install -g azure-functions-core-tools@4 --unsafe-perm true
+# then open a NEW terminal so PATH refreshes
+func --version
+```
+
 - Azure CLI installed and logged in (az login): https://learn.microsoft.com/cli/azure/install-azure-cli
 - (Optional) Visual Studio Code with the Azure Functions extension
 
